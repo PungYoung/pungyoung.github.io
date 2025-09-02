@@ -31,9 +31,9 @@ jobs:
         run: npm run docs:build
 
       # 将文档产物提交到main分支
-      - name: Deploy
-        id: deployment
-        uses: actions/deploy-pages@v1
+      - uses: actions/upload-pages-artifact@v1
+        with:
+          path: docs
 
       # - name: Sync to Gitee
       #   uses: wearerequired/git-mirror-action@v1.2.0  
