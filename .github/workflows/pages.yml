@@ -15,18 +15,10 @@ jobs:
       - name: Checkout   
         uses: actions/checkout@v4  
         with:  
-          ref: 'main'  
-
-      - name: Install yarn  
-        run: corepack enable  
-
-      - uses: actions/setup-node@v3  
-        with:  
-          node-version: '22'  
-          cache: 'yarn'  
+          ref: 'main'
 
       - name: Install dependencies  
-        run: yarn install  
+        run: pnpm install
 
       - name: Build Site  
         run: npm run docs:build  
