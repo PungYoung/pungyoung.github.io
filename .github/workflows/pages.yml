@@ -12,19 +12,27 @@ jobs:
   deploy-and-sync:  
     runs-on: ubuntu-latest  
     steps:  
-      - name: Checkout   
+      - name: Checkout
         uses: actions/checkout@v4  
         with:  
           ref: 'main'
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 7
 
-      - name: Install dependencies  
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: pnpm
+
+      - name: Install dependencies
         run: pnpm install
 
-      - name: Build Site  
-        run: npm run docs:build  
+      - name: Build Site
+        run: pnpm run docs:build
 
       # 将文档产物提交到main分支  
-      - name: Deploy for Github   
+      - name: Deploy for Github
         uses: JamesIves/github-pages-deploy-action@v4.4.1  
         with:  
           branch: main
