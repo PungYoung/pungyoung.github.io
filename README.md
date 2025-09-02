@@ -1,7 +1,6 @@
 # 🚀 Kubernetes 运维工具箱 | K8S Admin Toolkit
 
 [![GitHub Pages](https://img.shields.io/badge/Docs-GitHub%20Pages-blue?style=flat-square)](https://pungyoung.github.io/pungyoung.github.io/)
-[![License](https://img.shields.io/github/license/pungyoung/pungyoung.github.io?style=flat-square)](LICENSE)
 [![Last Commit](https://img.shields.io/github/last-commit/pungyoung/pungyoung.github.io?style=flat-square)](https://github.com/pungyoung/pungyoung.github.io/commits/main)
 
 **专为 Kubernetes 运维工程师打造的开源工具集，集成监控、诊断、自动化脚本和最佳实践文档，助力高效管理集群。**  
