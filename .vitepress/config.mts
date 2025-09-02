@@ -2,8 +2,9 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "My Home Pages",
-  description: "技术分析",
+  outDir:"./docs",
+  title: "_> 云原生 & AI",
+  description: "热衷于技术的运维佬",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
