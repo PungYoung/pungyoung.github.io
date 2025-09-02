@@ -28,14 +28,13 @@ jobs:
         run: npm run docs:build
 
       # 将文档产物提交到main分支  
-      - name: Deploy for Github
-        uses: JamesIves/github-pages-deploy-action@v4.4.1  
-        with:  
-          branch: main
-          folder: docs
-          # enable single-commit to reduce the repo size  
-          single-commit: true
-          clean: true
+      - uses: actions/configure-pages@v2
+      - uses: actions/upload-pages-artifact@v1
+        with:
+          path: docs
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v1
 
       # - name: Sync to Gitee
       #   uses: wearerequired/git-mirror-action@v1.2.0  
