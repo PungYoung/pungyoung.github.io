@@ -8,16 +8,16 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: '首页', link: '/' },
+      { text: 'Kubernetes', link: '/kubernetes/index' }
     ],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: 'Kubernetes',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'Kubernetes 云原生', link: '/kubernetes/index' },
+          { text: 'Linux 技术', link: '/api-examples' }
         ]
       }
     ],
