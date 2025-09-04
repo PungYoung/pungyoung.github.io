@@ -9,7 +9,11 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },
-      { text: 'Kubernetes', link: '/kubernetes/index' }
+      { text: 'Kubernetes', link: '/kubernetes/index' },
+      { text: 'Linux', link: '/linux/index' },
+      { text: 'Devops', link: '/devops/index' },
+      { text: 'Monitor', link: '/monitor/index' },
+      { text: 'AI', link: '/ai/index' }
     ],
 
     sidebar: [
