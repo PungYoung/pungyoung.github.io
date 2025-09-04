@@ -2,10 +2,11 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  outDir:"./docs",
+  outDir: "./docs",
   title: "_> 云原生 & AI",
   description: "热衷于技术的运维佬",
   themeConfig: {
+    logo: '/logo.svg',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },
@@ -23,14 +24,14 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: 'Kubernetes 云原生', link: '/kubernetes/index' },
-          
+
         ]
       },
-           {
+      {
         text: 'Linux',
         collapsed: false,
         items: [
- 
+
           { text: 'Linux 技术', link: '/api-examples' }
         ]
       }
