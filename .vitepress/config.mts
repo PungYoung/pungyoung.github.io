@@ -13,7 +13,8 @@ export default defineConfig({
       { text: 'Linux', link: '/linux/index' },
       { text: 'Devops', link: '/devops/index' },
       { text: 'Monitor', link: '/monitor/index' },
-      { text: 'AI', link: '/ai/index' }
+      { text: 'AI', link: '/ai/index' },
+      { text: '关于', link: '/about/index' }
     ],
 
     sidebar: [
