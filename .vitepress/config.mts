@@ -20,8 +20,17 @@ export default defineConfig({
     sidebar: [
       {
         text: 'Kubernetes',
+        collapsed: false,
         items: [
           { text: 'Kubernetes 云原生', link: '/kubernetes/index' },
+          
+        ]
+      },
+           {
+        text: 'Linux',
+        collapsed: false,
+        items: [
+ 
           { text: 'Linux 技术', link: '/api-examples' }
         ]
       }
